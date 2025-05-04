@@ -1,0 +1,111 @@
+.projects {
+  background-color: var(--bg-color);
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    .highlight {
+      color: var(--primary-color);
+    }
+  }
+
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .project-card {
+    display: flex;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+    
+    .project-image {
+      flex: 1;
+      max-width: 50%;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
+    .project-info {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      
+      .project-category {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        align-self: flex-start;
+      }
+      
+      .project-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--secondary-color);
+        margin-bottom: 1rem;
+      }
+      
+      .project-description {
+        margin-bottom: 1.5rem;
+        flex: 1;
+      }
+      
+      .project-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        .project-github-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: var(--secondary-color);
+          color: white;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          
+          &:hover {
+            background-color: var(--primary-color);
+          }
+          
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .project-card {
+      flex-direction: column;
+      
+      .project-image {
+        max-width: 100%;
+        height: 300px;
+      }
+    }
+  }
+}
