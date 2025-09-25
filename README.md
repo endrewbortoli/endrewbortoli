@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Endrew Bortoli</h1>
-<h3 align="center">A passionate developer from Brazil, I love to build cool things and I can make robots work or build full stack applications for Web, Mobile and Desktop.</h3>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=endrewbortoli" alt="endrewbortoli" /></a> </p>
-
+<h3 align="center">A passionate developer from Brazil, I love to build cool things and I can make robots work or build full-stack applications</h3
+                                                                                                                                                                             
 - 🔭 I’m currently working on **SAT Compass and Light Check**
 
 - 🌱 I’m currently learning **.NET and Springboot**
