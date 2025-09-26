@@ -1,14 +1,10 @@
 <h1 align="center">Hi 👋, I'm Endrew Bortoli</h1>
-<h3 align="center">A passionate developer from Brazil, I love to build cool things and I can make robots work or build full-stack applications</h3
+<h3 align="center">A passionate developer from Brazil, I love to build cool things. I can make robots move or build full-stack applications</h3
                                                                                                                                                                              
 - 🔭 I’m currently working on **SAT Compass and Light Check**
-
 - 🌱 I’m currently learning **.NET and Springboot**
-
 - 👯 I’m looking to collaborate on **projects that impacts other people lives**
-
 - 💬 Ask me about **React, Vue, Java, Control Engineering**
-
 - 📫 How to reach me **endrewbortoli@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
