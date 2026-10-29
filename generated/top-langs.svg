@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="195" viewBox="0 0 400 195">
+  <defs><clipPath id="bar"><rect x="0" y="0" width="350" height="8" rx="4"/></clipPath></defs>
+  <rect width="400" height="195" rx="4.5" fill="#1a1b27"/>
+  <text x="25" y="38" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="18" font-weight="600" fill="#70a5fd">Most Used Languages</text>
+  <g transform="translate(25, 55)" clip-path="url(#bar)"><rect x="0.00" y="0" width="140.10" height="8" fill="#f34b7d"/><rect x="140.10" y="0" width="129.70" height="8" fill="#555555"/><rect x="269.80" y="0" width="26.11" height="8" fill="#b07219"/><rect x="295.92" y="0" width="18.67" height="8" fill="#f1e05a"/><rect x="314.59" y="0" width="18.07" height="8" fill="#e34c26"/><rect x="332.66" y="0" width="6.88" height="8" fill="#663399"/><rect x="339.54" y="0" width="6.43" height="8" fill="#878787"/><rect x="345.96" y="0" width="4.04" height="8" fill="#3572A5"/></g>
+    <g transform="translate(25, 90)">
+      <circle cx="5" cy="-5" r="5" fill="#f34b7d"/>
+      <text x="16" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" font-weight="400" fill="#38bdae">C++ 40.03%</text>
+    </g>
+    <g transform="translate(205, 90)">
+      <circle cx="5" cy="-5" r="5" fill="#555555"/>
+      <text x="16" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" font-weight="400" fill="#38bdae">C 37.06%</text>
+    </g>
+    <g transform="translate(25, 115)">
+      <circle cx="5" cy="-5" r="5" fill="#b07219"/>
+      <text x="16" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" font-weight="400" fill="#38bdae">Java 7.46%</text>
+    </g>
+    <g transform="translate(205, 115)">
+      <circle cx="5" cy="-5" r="5" fill="#f1e05a"/>
+      <text x="16" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" font-weight="400" fill="#38bdae">JavaScript 5.34%</text>
+    </g>
+    <g transform="translate(25, 140)">
+      <circle cx="5" cy="-5" r="5" fill="#e34c26"/>
+      <text x="16" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" font-weight="400" fill="#38bdae">HTML 5.16%</text>
+    </g>
+    <g transform="translate(205, 140)">
+      <circle cx="5" cy="-5" r="5" fill="#663399"/>
+      <text x="16" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" font-weight="400" fill="#38bdae">CSS 1.97%</text>
+    </g>
+    <g transform="translate(25, 165)">
+      <circle cx="5" cy="-5" r="5" fill="#878787"/>
+      <text x="16" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" font-weight="400" fill="#38bdae">Hack 1.84%</text>
+    </g>
+    <g transform="translate(205, 165)">
+      <circle cx="5" cy="-5" r="5" fill="#3572A5"/>
+      <text x="16" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" font-weight="400" fill="#38bdae">Python 1.15%</text>
+    </g>
+</svg>

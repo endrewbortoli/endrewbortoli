@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="195" viewBox="0 0 400 195">
+  <rect width="400" height="195" rx="4.5" fill="#1a1b27"/>
+  <text x="25" y="38" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="18" font-weight="600" fill="#70a5fd">Endrew Bortoli's GitHub Stats</text>
+    <g transform="translate(25, 70)">
+      <circle cx="5" cy="-5" r="4" fill="#bf91f3"/>
+      <text x="20" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="600" fill="#38bdae">Total stars:</text>
+      <text x="220" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="700" fill="#38bdae">0</text>
+    </g>
+    <g transform="translate(25, 95)">
+      <circle cx="5" cy="-5" r="4" fill="#bf91f3"/>
+      <text x="20" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="600" fill="#38bdae">Commits (last year):</text>
+      <text x="220" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="700" fill="#38bdae">333</text>
+    </g>
+    <g transform="translate(25, 120)">
+      <circle cx="5" cy="-5" r="4" fill="#bf91f3"/>
+      <text x="20" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="600" fill="#38bdae">Pull requests:</text>
+      <text x="220" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="700" fill="#38bdae">1</text>
+    </g>
+    <g transform="translate(25, 145)">
+      <circle cx="5" cy="-5" r="4" fill="#bf91f3"/>
+      <text x="20" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="600" fill="#38bdae">Issues:</text>
+      <text x="220" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="700" fill="#38bdae">0</text>
+    </g>
+    <g transform="translate(25, 170)">
+      <circle cx="5" cy="-5" r="4" fill="#bf91f3"/>
+      <text x="20" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="600" fill="#38bdae">Contributed to:</text>
+      <text x="220" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="700" fill="#38bdae">0</text>
+    </g>
+</svg>
