@@ -10,10 +10,10 @@
 
 I'm a developer from Brazil who loves to build cool things — from code that makes robots move to full-stack web and mobile applications. I enjoy working across the whole stack, from hardware and C++ up to TypeScript front-ends.
 
-## 🛠️ Tech stack
+## 💻 My programming languages
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cpp,cs,java,py,js,ts,html,css,react,vue,nodejs,dotnet,flutter,dart,swift,arduino,git,docker&perline=9" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=endrewbortoli&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=400" />
 </p>
 
 ## 📊 GitHub stats
@@ -21,6 +21,12 @@ I'm a developer from Brazil who loves to build cool things — from code that ma
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=endrewbortoli&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
   <img height="165" src="https://streak-stats.demolab.com?user=endrewbortoli&theme=tokyonight&hide_border=true" />
+</p>
+
+## 🧰 Stacks I've already used
+
+<p align="center">
+  <img width="380" src="https://skillicons.dev/icons?i=cpp,cs,java,py,js,ts,html,css,react,vue,nodejs,dotnet,flutter,dart,swift,arduino,git,docker&perline=9" />
 </p>
 
 ## 🤝 Connect with me
