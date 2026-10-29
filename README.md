@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Endrew%20Bortoli&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Robotics%20%26%20Full-Stack%20Developer&descAlignY=58&descSize=20" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&reversal=false&text=Endrew%20Bortoli&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Robotics%20%26%20Full-Stack%20Developer&descAlignY=58&descSize=20" />
 
 <p align="center">
   <a href="https://git.io/typing-svg">
@@ -13,17 +13,17 @@ I'm a developer from Brazil who loves to build cool things — from code that ma
 ## 💻 My programming languages
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=endrewbortoli&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=400" />
+  <img src="./generated/top-langs.svg" alt="Most used languages" />
 </p>
 
 ## 📊 GitHub stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=endrewbortoli&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img height="165" src="./generated/stats.svg" alt="GitHub stats" />
   <img height="165" src="https://streak-stats.demolab.com?user=endrewbortoli&theme=tokyonight&hide_border=true" />
 </p>
 
-## 🧰 Stacks I've already used
+## 🧰 I've already used:
 
 <p align="center">
   <img width="380" src="https://skillicons.dev/icons?i=cpp,cs,java,py,js,ts,html,css,react,vue,nodejs,dotnet,flutter,dart,swift,arduino,git,docker&perline=9" />
