@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&reversal=false&text=Endrew%20Bortoli&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Robotics%20%26%20Full-Stack%20Developer&descAlignY=58&descSize=20" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Endrew%20Bortoli&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Robotics%20and%20Full-Stack%20Developer&descAlignY=58&descSize=20" />
 
 <p align="center">
   <a href="https://git.io/typing-svg">
@@ -19,8 +19,7 @@ I'm a developer from Brazil who loves to build cool things — from code that ma
 ## 📊 GitHub stats
 
 <p align="center">
-  <img height="165" src="./generated/stats.svg" alt="GitHub stats" />
-  <img height="165" src="https://streak-stats.demolab.com?user=endrewbortoli&theme=tokyonight&hide_border=true" />
+  <img src="./generated/stats.svg" alt="GitHub stats" />
 </p>
 
 ## 🧰 I've already used:

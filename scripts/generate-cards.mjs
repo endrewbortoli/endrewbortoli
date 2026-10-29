@@ -12,20 +12,18 @@ const theme = {
   bg: "#1a1b27",
   title: "#70a5fd",
   text: "#38bdae",
-  icon: "#bf91f3",
 };
 
 const query = `
 query ($login: String!) {
   user(login: $login) {
-    name
-    contributionsCollection { totalCommitContributions restrictedContributionsCount }
-    pullRequests { totalCount }
-    issues { totalCount }
-    repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST, ISSUE]) { totalCount }
+    contributionsCollection {
+      totalCommitContributions
+      restrictedContributionsCount
+      contributionYears
+    }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
       nodes {
-        stargazerCount
         languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
           edges { size node { name color } }
         }
@@ -34,16 +32,30 @@ query ($login: String!) {
   }
 }`;
 
-async function fetchUser() {
+async function gql(query, variables) {
   if (!TOKEN) throw new Error("GITHUB_TOKEN is not set");
   const res = await fetch("https://api.github.com/graphql", {
     method: "POST",
     headers: { Authorization: `bearer ${TOKEN}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ query, variables: { login: USERNAME } }),
+    body: JSON.stringify({ query, variables }),
   });
   const json = await res.json();
   if (json.errors) throw new Error(JSON.stringify(json.errors));
   return json.data.user;
+}
+
+// contributionsCollection spans at most one year, so query each year separately.
+async function totalContributions(years) {
+  const fields = years
+    .map(
+      (y) =>
+        `y${y}: contributionsCollection(from: "${y}-01-01T00:00:00Z", to: "${y}-12-31T23:59:59Z") {
+      contributionCalendar { totalContributions }
+    }`,
+    )
+    .join("\n");
+  const data = await gql(`query ($login: String!) { user(login: $login) { ${fields} } }`, { login: USERNAME });
+  return Object.values(data).reduce((sum, c) => sum + c.contributionCalendar.totalContributions, 0);
 }
 
 const escape = (s) =>
@@ -51,30 +63,18 @@ const escape = (s) =>
 
 const font = `font-family="'Segoe UI', Ubuntu, Sans-Serif"`;
 
-function statsCard(user) {
-  const repos = user.repositories.nodes;
-  const c = user.contributionsCollection;
-  const rows = [
-    ["Total stars", repos.reduce((sum, r) => sum + r.stargazerCount, 0)],
-    ["Commits (last year)", c.totalCommitContributions + c.restrictedContributionsCount],
-    ["Pull requests", user.pullRequests.totalCount],
-    ["Issues", user.issues.totalCount],
-    ["Contributed to", user.repositoriesContributedTo.totalCount],
-  ];
-  const height = 70 + rows.length * 25;
-  const body = rows
-    .map(
-      ([label, value], i) => `
-    <g transform="translate(25, ${70 + i * 25})">
-      <circle cx="5" cy="-5" r="4" fill="${theme.icon}"/>
-      <text x="20" ${font} font-size="14" font-weight="600" fill="${theme.text}">${label}:</text>
-      <text x="220" ${font} font-size="14" font-weight="700" fill="${theme.text}">${value}</text>
-    </g>`,
-    )
-    .join("");
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="${height}" viewBox="0 0 400 ${height}">
-  <rect width="400" height="${height}" rx="4.5" fill="${theme.bg}"/>
-  <text x="25" y="38" ${font} font-size="18" font-weight="600" fill="${theme.title}">${escape(user.name || USERNAME)}'s GitHub Stats</text>${body}
+function contributionsCard(total, firstYear, commits) {
+  const width = 495;
+  const height = 195;
+  const column = (x, value, label, range) => `
+  <g transform="translate(${x}, 0)" text-anchor="middle">
+    <text y="92" ${font} font-size="28" font-weight="700" fill="${theme.title}">${value}</text>
+    <text y="128" ${font} font-size="14" fill="${theme.title}">${label}</text>
+    <text y="155" ${font} font-size="12" fill="${theme.text}">${range}</text>
+  </g>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
+  <rect width="${width}" height="${height}" rx="4.5" fill="${theme.bg}"/>${column(width / 4, total, "Total Contributions", `${firstYear} - Present`)}
+  <line x1="${width / 2}" y1="28" x2="${width / 2}" y2="170" stroke="#e4e2e2" stroke-width="1"/>${column((width * 3) / 4, commits, "Commits", "Last 12 months")}
 </svg>
 `;
 }
@@ -130,8 +130,12 @@ function topLangsCard(user) {
 `;
 }
 
-const user = await fetchUser();
+const user = await gql(query, { login: USERNAME });
+const { contributionYears, totalCommitContributions, restrictedContributionsCount } = user.contributionsCollection;
+// Private-repo contributions are only exposed as one count, so they are added to public commits.
+const commits = totalCommitContributions + restrictedContributionsCount;
+const total = await totalContributions(contributionYears);
 mkdirSync(OUT_DIR, { recursive: true });
-writeFileSync(`${OUT_DIR}/stats.svg`, statsCard(user));
+writeFileSync(`${OUT_DIR}/stats.svg`, contributionsCard(total, Math.min(...contributionYears), commits));
 writeFileSync(`${OUT_DIR}/top-langs.svg`, topLangsCard(user));
 console.log(`Wrote ${OUT_DIR}/stats.svg and ${OUT_DIR}/top-langs.svg`);
