@@ -1,29 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="195" viewBox="0 0 400 195">
-  <rect width="400" height="195" rx="4.5" fill="#1a1b27"/>
-  <text x="25" y="38" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="18" font-weight="600" fill="#70a5fd">Endrew Bortoli's GitHub Stats</text>
-    <g transform="translate(25, 70)">
-      <circle cx="5" cy="-5" r="4" fill="#bf91f3"/>
-      <text x="20" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="600" fill="#38bdae">Total stars:</text>
-      <text x="220" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="700" fill="#38bdae">0</text>
-    </g>
-    <g transform="translate(25, 95)">
-      <circle cx="5" cy="-5" r="4" fill="#bf91f3"/>
-      <text x="20" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="600" fill="#38bdae">Commits (last year):</text>
-      <text x="220" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="700" fill="#38bdae">333</text>
-    </g>
-    <g transform="translate(25, 120)">
-      <circle cx="5" cy="-5" r="4" fill="#bf91f3"/>
-      <text x="20" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="600" fill="#38bdae">Pull requests:</text>
-      <text x="220" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="700" fill="#38bdae">1</text>
-    </g>
-    <g transform="translate(25, 145)">
-      <circle cx="5" cy="-5" r="4" fill="#bf91f3"/>
-      <text x="20" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="600" fill="#38bdae">Issues:</text>
-      <text x="220" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="700" fill="#38bdae">0</text>
-    </g>
-    <g transform="translate(25, 170)">
-      <circle cx="5" cy="-5" r="4" fill="#bf91f3"/>
-      <text x="20" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="600" fill="#38bdae">Contributed to:</text>
-      <text x="220" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" font-weight="700" fill="#38bdae">0</text>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195">
+  <rect width="495" height="195" rx="4.5" fill="#1a1b27"/>
+  <g transform="translate(123.75, 0)" text-anchor="middle">
+    <text y="92" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="28" font-weight="700" fill="#70a5fd">845</text>
+    <text y="128" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" fill="#70a5fd">Total Contributions</text>
+    <text y="155" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" fill="#38bdae">2023 - Present</text>
+  </g>
+  <line x1="247.5" y1="28" x2="247.5" y2="170" stroke="#e4e2e2" stroke-width="1"/>
+  <g transform="translate(371.25, 0)" text-anchor="middle">
+    <text y="92" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="28" font-weight="700" fill="#70a5fd">334</text>
+    <text y="128" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" fill="#70a5fd">Commits</text>
+    <text y="155" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" fill="#38bdae">Last 12 months</text>
+  </g>
 </svg>
