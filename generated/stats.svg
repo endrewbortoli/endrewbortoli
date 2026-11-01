@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195">
   <rect width="495" height="195" rx="4.5" fill="#1a1b27"/>
   <g transform="translate(123.75, 0)" text-anchor="middle">
-    <text y="92" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="28" font-weight="700" fill="#70a5fd">875</text>
+    <text y="92" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="28" font-weight="700" fill="#70a5fd">942</text>
     <text y="128" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" fill="#70a5fd">Total Contributions</text>
     <text y="155" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" fill="#38bdae">2023 - Present</text>
   </g>
   <line x1="247.5" y1="28" x2="247.5" y2="170" stroke="#e4e2e2" stroke-width="1"/>
   <g transform="translate(371.25, 0)" text-anchor="middle">
-    <text y="92" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="28" font-weight="700" fill="#70a5fd">364</text>
+    <text y="92" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="28" font-weight="700" fill="#70a5fd">431</text>
     <text y="128" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="14" fill="#70a5fd">Commits</text>
     <text y="155" font-family="'Segoe UI', Ubuntu, Sans-Serif" font-size="12" fill="#38bdae">Last 12 months</text>
   </g>
